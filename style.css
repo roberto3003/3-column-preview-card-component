@@ -93,14 +93,58 @@
 	align-items: center;	
   }
 
+  .icon {
+	background-repeat: no-repeat;
+	background-size:auto 100%;
+	height: 4em;
+	margin-block-end: 2em;
+  }
+
+  article {
+	margin-block-end: 4em;
+  }
+
+  button {
+	text-transform:capitalize;
+	margin-block-end: 1em;
+	padding: 0.5em 2em;
+	border-radius: 0.5em;
+  }
+
+  .section1 .icon {
+	background-image: url("./images/icon-sedans.svg");
+  }
+
+  .section2 .icon {
+	background-image: url("./images/icon-suvs.svg");
+  }
+
+  .section3 .icon {
+	background-image: url("./images/icon-luxury.svg");
+  }
+
+  .section1 button {
+	color: darkred;
+  }
+
+
+  .section2 button {
+	color: midnightblue;
+  }
+
+  .section3 button {
+	color: darkgreen;
+  }
+
+
   .section1 {
-	background-color: saddlebrown;
+	background-color: darkred;
   }
 
   .section2 {
-	background-color: hsl(184, 100%, 22%);
+	background-color: midnightblue;
   }
 
   .section3 {
-	background-color:hsl(179, 100%, 13%);
+	background-color: darkgreen;
   }
