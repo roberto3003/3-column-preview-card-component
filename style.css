@@ -19,6 +19,7 @@
 	margin: 0;
   }
 
+
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role='list'],
   ol[role='list'] {
@@ -37,6 +38,7 @@
 	line-height: 1.5;
 	font-family: system-ui;
 	font-size: clamp(1rem, 1.5vw,  30px) ;
+	color: white;
 	letter-spacing: 0.25em;
 	background-color: hsl(0, 0%, 95%);
   }
@@ -71,6 +73,9 @@
   main {
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 2000px;
+	border-radius: 0.5em;
+	overflow: hidden;
   }
 
   main > * {
@@ -86,4 +91,16 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;	
+  }
+
+  .section1 {
+	background-color: saddlebrown;
+  }
+
+  .section2 {
+	background-color: hsl(184, 100%, 22%);
+  }
+
+  .section3 {
+	background-color:hsl(179, 100%, 13%);
   }
