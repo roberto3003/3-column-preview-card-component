@@ -4,21 +4,6 @@
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
 }
 
-/* dark-theme colors */
-:root {
-  --bg-color: midnightblue;
-  --text: white;
-  --text-contrast: rgba(46, 49, 49, 1);
-  --theme: lightsteelblue;
-  --contrast: rebeccapurple;
-  --medium: indigo;
-  --medium2: unset;
-  --accent: coral;
-  --shadow: unset;
-  --shadow-deep: unset;
-}
-
-
 /* light-theme colors */
 :root {
   --bg-color: ivory;
@@ -31,6 +16,21 @@
   --accent: darkslategrey;
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
   --shadow-deep: 0 0.5vw 2vw  0 rgba(0,0,0,0.2);
+}
+
+
+/* dark-theme colors */
+:root {
+  --bg-color: var(--text-contrast);
+  --text: white;
+  --text-contrast: rgba(46, 49, 49, 1);
+  --theme: darkred;
+  --contrast: darkslategrey;
+  --medium: midnightblue;
+  --medium2: darkgreen;
+  --accent: white;
+  --shadow: unset;
+  --shadow-deep: unset;
 }
 
 html {
@@ -97,6 +97,12 @@ main > * {
 .card3 {
   background-color: var(--medium2);
 }
+
+.radius {
+  border-radius: var(--padding);
+  overflow: hidden;
+}
+
 
 footer .wrapper {
   min-height: unset;
